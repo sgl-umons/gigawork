@@ -1,5 +1,8 @@
-[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/cardoeng/gigawork/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/cardoeng/gigawork)
 # gigawork
+
+[![License](https://badgen.net/pypi/license/gigawork)](https://github.com/sgl-umons/gigawork/blob/master/LICENSE.txt)
+[![PyPI](https://badgen.net/pypi/v/gigawork)](https://pypi.org/project/gigawork)
+[![Last commit](https://badgen.net/github/last-commit/sgl-umons/gigawork)](https://github.com/sgl-umons/gigawork/commits/)
 
 An automated tool for extracting GitHub Actions' workflows from Git repositories written in Python.
 `gigawork` (**Gi**ve me **G**itHub **A**ctions **Work**flows) is primarily designed to be used as a command-line tool.
@@ -14,16 +17,14 @@ The easiest way to install `gigawork` is to install from Pypi
 pip install gigawork
 ```
 
-*Note: a recently fixed issue in GitPython (see https://github.com/gitpython-developers/GitPython/pull/1933) might affect the results of gigawork. As Pypi does not seem to allow git dependencies, you may need to update the dependency yourself via `pip install git+https://github.com/gitpython-developers/GitPython.git`.*
-
 Another easy way to install `gigawork` is via `pip` from this GitHub repository
 ```
-pip install git+https://github.com/cardoeng/gigawork
+pip install git+https://github.com/sgl-umons/gigawork
 ```
 
 Alternatively, you can clone this repository and install it locally
 ```
-git clone https://github.com/cardoeng/gigawork
+git clone https://github.com/sgl-umons/gigawork
 cd gigawork
 pip install .
 ```
@@ -113,12 +114,12 @@ As an example, the following command extracts every workflow files from the repo
 gigawork example_repository -n my-example-name -o output.csv -w workflows
 ```
 
-Note that the repository does not have to be already cloned. The tool can fetch it for you and clean up (unless told otherwise) when the work is done. An example is shown below. The GitHub repository `https://github.com/cardoeng/gigawork` will be fetched, saved under the `gigawork` directory and the `repository` column will be `gigawork_name` in the resulting CSV file. Note that, if `-s gigawork` was not specified, the tool will create a temporary directory and clean up when it finishes.
+Note that the repository does not have to be already cloned. The tool can fetch it for you and clean up (unless told otherwise) when the work is done. An example is shown below. The GitHub repository `https://github.com/sgl-umons/gigawork` will be fetched, saved under the `gigawork` directory and the `repository` column will be `gigawork_name` in the resulting CSV file. Note that, if `-s gigawork` was not specified, the tool will create a temporary directory and clean up when it finishes.
 
 ```bash
-gigawork https://github.com/cardoeng/gigawork -n gigawork_name -s gigawork -o output.csv
+gigawork https://github.com/sgl-umons/gigawork -n gigawork_name -s gigawork -o output.csv
 ```
 
 ## License
 
-Distributed under [GNU Lesser General Public License v3](https://github.com/cardoeng/gigawork/blob/master/LICENSE.txt).
+Distributed under [GNU Lesser General Public License v3](https://github.com/sgl-umons/gigawork/blob/master/LICENSE.txt).

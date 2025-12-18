@@ -38,7 +38,7 @@ setup(
     python_requires=">= 3.8",
     install_requires=[
         "click ~= 8.1.7",
-        "GitPython ~= 3.1.43",
+        "GitPython ~= 3.1.45",
         "jsonschema ~= 4.21.0",
         "ruamel.yaml ~= 0.18.6",
     ],
