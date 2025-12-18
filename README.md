@@ -10,6 +10,18 @@ Given a Git repository, it extracts the different workflows and their versions f
 The extraction is done by traversing the Git history of the repository and going back in time respecting the first-parent rule until the first commit (or the given reference) is reached.
 The workflows are saved in a given directory along with relevant metadata (see [Usage](#usage)) in a given CSV file.
 
+This project is developed by Guillaume Cardoen at the Software Engineering Lab of the University of Mons (Belgium).
+
+```
+@inproceedings{cardoen2024dataset,
+  title={A dataset of Github Actions workflow histories},
+  author={Cardoen, Guillaume and Mens, Tom and Decan, Alexandre},
+  booktitle={Proceedings of the 21st International Conference on Mining Software Repositories},
+  pages={677--681},
+  year={2024}
+}
+```
+
 ## Installation
 
 The easiest way to install `gigawork` is to install from Pypi
@@ -119,6 +131,8 @@ Note that the repository does not have to be already cloned. The tool can fetch 
 ```bash
 gigawork https://github.com/sgl-umons/gigawork -n gigawork_name -s gigawork -o output.csv
 ```
+
+
 
 ## License
 
